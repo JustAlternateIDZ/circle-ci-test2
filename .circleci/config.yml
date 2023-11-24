@@ -4,5 +4,7 @@ orbs:
   go: go-applications/circle-ci-orbs@0.0.1
 
 jobs:
-  go/build
+  build:
+     steps:
+	- go/build
   
