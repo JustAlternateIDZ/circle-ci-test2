@@ -1,14 +1,5 @@
 version: 2.1
-jobs:
-  build:
-    working_directory: ~/repo
-    docker:
-      - image: cimg/go:1.15.10
-    steps:
-      - checkout
-      - run:
-          name: Install Dependencies
-          command: go get ./...
-      - run:
-          name: Run tests
-          command: go test -v
+
+orbs:
+  circle-ci-orbs: go-applications/circle-ci-orbs@0.0.1
+
