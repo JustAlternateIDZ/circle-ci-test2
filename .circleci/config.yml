@@ -6,5 +6,5 @@ orbs:
 jobs:
   build:
      steps:
-	- go/build
+       - go/build
   
