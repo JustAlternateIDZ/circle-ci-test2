@@ -1,5 +1,8 @@
 version: 2.1
 
 orbs:
-  circle-ci-orbs: go-applications/circle-ci-orbs@0.0.1
+  go: go-applications/circle-ci-orbs@0.0.1
 
+jobs:
+  go/build
+  
