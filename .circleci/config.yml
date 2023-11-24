@@ -5,6 +5,9 @@ orbs:
 
 jobs:
   build:
-     steps:
-       - go/build
+    working_directory: ~/repo
+    docker:
+      - image: cimg/go:1.15.10
+    steps:
+      - go/build
   
