@@ -9,5 +9,5 @@ jobs:
     docker:
       - image: cimg/go:1.15.10
     steps:
-      - circle-ci-orbs/default
+      - circle-ci-orbs/build
   
