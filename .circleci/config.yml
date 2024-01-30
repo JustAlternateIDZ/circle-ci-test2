@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  go: go-applications/circle-ci-orbs@0.0.1
+  circle-ci-orbs: go-applications/circle-ci-orbs@0.0.1
 
 jobs:
   build:
@@ -9,5 +9,5 @@ jobs:
     docker:
       - image: cimg/go:1.15.10
     steps:
-      - go/default
+      - circle-ci-orbs/default
   
