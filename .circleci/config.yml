@@ -4,10 +4,10 @@ orbs:
   circle-ci-orbs: go-applications/circle-ci-orbs@0.0.1
 
 jobs:
-  build:
+  test:
     working_directory: ~/repo
-    docker:
-      - image: cimg/go:1.15.10
+    executor: circle-ci-orbs/default # use the default executor specified by the orb
     steps:
-      - circle-ci-orbs/default
+      - checkout
+      - circle-ci-orbs/default # Use a command from the orb in a job's steps
   
